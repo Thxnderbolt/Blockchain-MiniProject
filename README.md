@@ -125,16 +125,6 @@ project/
 
 ---
 
-## Future Enhancements
-
-* Improved user interface and visualization
-* Integration with real-world QR scanning systems
-* Deployment on public test networks
-* Mobile application support
-* Enhanced security with role restrictions
-
----
-
 ## Conclusion
 
 This project demonstrates how blockchain technology can be used to improve transparency, traceability, and trust in supply chains. By leveraging smart contracts and decentralized storage, it ensures that product information remains secure and tamper-proof.
