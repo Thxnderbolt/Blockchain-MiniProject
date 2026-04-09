@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Authenticity Tracker</title>
+
+    <style>
+    body {
+        font-family: Arial;
+        margin: 40px;
+        background: #f5f5f5;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    button {
+        padding: 8px 15px;
+        margin: 5px;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    input {
+        padding: 8px;
+        width: 200px;
+    }
+
+    pre {
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<body>
+
+    <h2>Verify Product</h2>
+
+    <input type="number" id="batchId" placeholder="Enter Batch ID">
+
+    <br><br>
+
+    <button onclick="connect()">Connect Wallet</button>
+    <button onclick="verifyProduct()">Verify</button>
+
+    <h3>Product Details</h3>
+    <pre id="result"></pre>
+
+    <h3>Supply Chain History</h3>
+    <pre id="history"></pre>
+
+    <script src="https://unpkg.com/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
+</body>
+</html>
