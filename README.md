@@ -31,15 +31,11 @@ This system uses a smart contract to:
 
 ## Features
 
-### Core Features
-
 * Product creation (restricted to manufacturer role)
 * Ownership transfer across supply chain participants
 * Checkpoint tracking for each stage of the product journey
 * Retrieval of complete product history
 * Product verification using batch ID
-
-### Additional Features
 
 * Role-based access control (Manufacturer, Distributor, Retailer)
 * Event logging for transparency and traceability
@@ -56,23 +52,6 @@ This system uses a smart contract to:
 * Ethers.js (Frontend blockchain interaction)
 * MetaMask (Wallet integration)
 * HTML, JavaScript (Frontend)
-
----
-
-## Project Structure
-
-```
-project/
-│
-├── contracts/
-│   └── SupplyChain.sol
-│
-├── frontend/
-│   ├── index.html
-│   └── app.js
-│
-└── README.md
-```
 
 ---
 
@@ -99,31 +78,6 @@ project/
 2. Enter a valid batch ID
 3. Click "Verify"
 4. View product details and supply chain history
-
----
-
-## Example Workflow
-
-1. Assign manufacturer role to an account
-2. Create a product with a batch ID
-3. Add checkpoints as the product moves through the supply chain
-4. Transfer ownership to the next participant
-5. Verify the product using the frontend
-
----
-
-## Smart Contract Concepts Used
-
-* Structs
-* Mappings
-* Dynamic arrays
-* Enums
-* Modifiers
-* Events
-* Require statements
-* View functions
-
----
 
 ## Conclusion
 
