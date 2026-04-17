@@ -2,7 +2,7 @@ if (typeof ethers === "undefined") {
     alert("Ethers not loaded!");
 }
 
-const contractAddress = "0xB38E038b0426623B48d2F740aC5D2253f4C7DF14";
+const contractAddress = "0x5078022eFE3BAF84Fb883c7E632DD96e0874F350";
 
 const abi = [
     "function verifyProduct(uint256) view returns (string,string,address,bool)",
@@ -92,6 +92,21 @@ Authentic: ${result[3]}`;
         console.error(err);
         alert("Error fetching data (check console)");
     }
+}
+
+function generateQR() {
+
+    const txHash = "0x558b553706291bb428a56c24f912b7d89c6efc32156539b4f09cb8d47a98ed48";
+
+    const url = `https://sepolia.etherscan.io/tx/${txHash}`;
+
+    document.getElementById("qrcode").innerHTML = "";
+
+    new QRCode(document.getElementById("qrcode"), {
+        text: url,
+        width: 200,
+        height: 200
+    });
 }
 
 // Run on page load

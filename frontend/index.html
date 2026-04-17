@@ -45,6 +45,10 @@
 
     <button onclick="connect()">Connect Wallet</button>
     <button onclick="verifyProduct()">Verify</button>
+    <button onclick="generateQR()">Generate QR</button>
+
+    <br><br>
+    <div id="qrcode"></div>
 
     <h3>Product Details</h3>
     <pre id="result"></pre>
@@ -53,9 +57,9 @@
     <pre id="history"></pre>
 
     <script src="https://unpkg.com/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
     <script src="app.js"></script>
 
-</body>
-</html>
 </body>
 </html>
